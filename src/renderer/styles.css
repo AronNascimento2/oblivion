@@ -1,0 +1,196 @@
+body {
+    font-family: Inter, Arial, sans-serif;
+    margin: 0;
+    background: #020307;
+    font-family: "Exo 2", sans-serif;
+    color: #e6eef8;
+    overflow-y: scroll;
+    height: 100vh;
+
+}
+.main{
+
+}
+/* largura do scroll vertical */
+body::-webkit-scrollbar {
+    width: 6px;
+    /* mais fino */
+    height: 6px;
+    /* mais baixo no scroll horizontal */
+}
+
+/* fundo do trilho */
+body::-webkit-scrollbar-track {
+    background: #a8a8a8;
+    border-radius: 10px;
+}
+
+/* "polegar" (parte que se move) */
+body::-webkit-scrollbar-thumb {
+    background: #3d3d63;
+    /* cor quente 🔥 */
+    border-radius: 10px;
+}
+
+/* polegar ao passar o mouse */
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #0b0b0f, #001f3f);
+}
+
+
+.main{
+
+}
+
+
+.app {
+    margin: 20px  ;
+        padding-bottom: 40px;
+
+}
+
+.header {
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 12px;
+    margin-top: 20px
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* distribui conteúdo e botão */
+    background: linear-gradient(105deg, rgb(36, 35, 35) 0%, #020307 100%);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+    color: #e6eef8;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.actions {
+    margin-top: 8px; /* só um pequeno espaçamento */
+}
+
+
+
+/* efeito hover opcional */
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+}
+
+.title {
+    font-weight: 700
+}
+
+.meta {
+    font-size: 12px;
+    opacity: 0.8
+}
+
+.genres {
+    width: 280px;
+    /* ou o tamanho desejado */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* ocupa toda a altura da tela */
+    width: 100vw;
+    /* ocupa toda a largura da tela */
+    position: fixed;
+    /* fica sobre todo o conteúdo */
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    /* garante que fique acima de outros elementos */
+}
+
+.text-loader {
+    font-size: 20px;
+    color: #eaeaf0;
+    font-weight: 600;
+}
+
+.actions {
+    margin-top: 8px
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background:  linear-gradient(100deg, #b52a11,#7f130c );
+    width:100%;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+    
+    
+}
+
+/* efeito hover */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+    filter: brightness(1.1);
+}
+
+/* efeito click */
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+.error {
+    color: #ff6b6b
+}
+
+.header {
+    display: flex;
+    gap: 8px
+}
+
+.header-steam {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.steam-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.steam-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.re-scan{
+    width: 200px;
+        box-shadow: 0 0 10px 1px rgba(75, 74, 74, 0.7);
+
+&:hover{
+    box-shadow: 0 0 10px 1px rgba(168, 168, 168, 0.7);
+
+}
+}
